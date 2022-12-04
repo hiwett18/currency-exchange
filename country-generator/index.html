@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <h1>Currency Converter</h1>
+    <div id="first-p">
+      <p>Currency Conversion from US Dollar to Foreign Currencies</p>
+    </div>
+  
+    <div class="container">
+      
+      <div class="form-container">
+        <form action="" id="my-form" name="my-form">
+          
+          <div class="from"><p>From</p></div>
+          <div class="currencies-one">
+            <select name="fromCurrency" class="currency"  id="local_currency">
+              <option value="USD">US Dollar</option>
+            </select>
+            <input type="number" id="amount-input" placeholder="0" value="1" step=".001">
+          </div>
+          
+          <div class="exchange-rate-sign"><p>To Foreign Currency Exchange Rate</p></div>
+          <div id="exchange-container">
+          <div class="currencies-two">
+
+            <select name="toCurrency" class="currency" id="foreign_currency">
+              <option class="each-cur" value="USD">US Dollar</option>
+              <option class="each-cur" value="AED" selected> AED - Emirati Dirham</option>
+              <option class="each-cur" value="AFN">AFN - Afghan Afghani</option>
+              <option class="each-cur" value="ALL">ALL - Albanian Lek</option>
+              <option class="each-cur" value="AMD">AMD - Armenian Dram</option>
+              <option class="each-cur" value="ANG">ANG - Dutch Guilder</option>
+              <option class="each-cur" value="AOA">AOA - Angolan Kwanza</option>
+              <option class="each-cur" value="ARS">ARS - Argentine Peso</option>
+              <option class="each-cur" value="AUD">AUD - Australian Dollar</option>
+              <option class="each-cur" value="AWG">AWG - Aruban or Dutch Guilder</option>
+              <option class="each-cur" value="AZN">AZN - Azerbaijan Manat</option>
+              <option class="each-cur" value="BAM">BAM - Bosnian Convertible Mark</option>
+              <option class="each-cur" value="BBD">BBD - Barbadian or Bajan Dollar</option>
+              <option class="each-cur" value="BDT">BDT - Bangladeshi Taka</option>
+              <option class="each-cur" value="BGN">BGN - Bulgarian Lev</option>
+              <option class="each-cur" value="BHD">BHD - Bahraini Dinar</option>
+              <option class="each-cur" value="BIF">BIF - Burundian Franc</option>
+              <option class="each-cur" value="BMD">BMD - Bermudian Dollar</option>
+              <option class="each-cur" value="BND">BND - Bruneian Dollar</option>
+              <option class="each-cur" value="BOB">BOB - Bolivian Boliviano</option>
+              <option class="each-cur" value="BRL">BRL - Brazilian Real</option>
+              <option class="each-cur" value="BSD">BSD - Bahamian Dollar</option>
+              <option class="each-cur" value="BTC">BTC - Bitcoin</option>
+              <option class="each-cur" value="BTN">BTN - Bhutanese Ngultrum</option>
+              <option class="each-cur" value="BWP">BWP - Botswana Pula</option>
+              <option class="each-cur" value="BYN">BYN - Belarusian Ruble</option>
+              <option class="each-cur" value="BZD">BZD - Belizean Dollar</option>
+              <option class="each-cur" value="CAD">CAD - Canadian Dollar</option>
+              <option class="each-cur" value="CDF">CDF - Congolese Franc</option>
+              <option class="each-cur" value="CHF">CHF - Swiss Franc</option>
+              <option class="each-cur" value="CLF">CLF - Central African Franc</option>
+              <option class="each-cur" value="CLP">CLP - Chilean Peso</option>
+              <option class="each-cur" value="CNH">CNH - Chinese Yuan Renminbi</option>
+              <option class="each-cur" value="CNY">CNY - Chinese Yuan Renminbi</option>
+              <option class="each-cur" value="COP">COP - Colombian Peso</option>
+              <option class="each-cur" value="CRC">CRC - Costa Rican Colon</option>
+              <option class="each-cur" value="CUC">CUC - Cuban Convertible Peso</option>
+              <option class="each-cur" value="CUP">CUP - Cuban Peso</option>
+              <option class="each-cur" value="CVE">CVE - Cape Verdean Escudo</option>
+              <option class="each-cur" value="CZK">CZK - Czesh Koruna</option>
+              <option class="each-cur" value="DJF">DJF - Djiboutian Franc</option>
+              <option class="each-cur" value="DKK">DKK - Danish Krone</option>
+              <option class="each-cur" value="DOP">DOP - Dominican Peso</option>
+              <option class="each-cur" value="DZD">DZD - Algerian Dinar</option>
+              <option class="each-cur" value="EGP">EGP - Egyptian Pound</option>
+              <option class="each-cur" value="ERN">ERN - Eritrean Nakfa</option>
+              <option class="each-cur" value="ETB">ETB - Ethiopian Birr</option>
+              <option class="each-cur" value="EUR">EUR - Euro</option>
+              <option class="each-cur" value="FJD">FJD - Fijian Dollar</option>
+              <option class="each-cur" value="FKP">FKP - Falkland Island Pound</option>
+              <option class="each-cur" value="GBP">GBP - British Pound</option>
+              <option class="each-cur" value="GEL">GEL - Georgian Lari</option>
+              <option class="each-cur" value="GGP">GGP - Guernsey Pound</option>
+              <option class="each-cur" value="GHS">GHS - Ghanaian Cedi</option>
+              <option class="each-cur" value="GIP">GIP - Gibraltar Pound</option>
+              <option class="each-cur" value="GMD">GMD - Gambian Dalasi</option>
+              <option class="each-cur" value="GNF">GNF - Guinean Franc</option>
+              <option class="each-cur" value="GTQ">GTQ - Guatemalan Quetzal</option>
+              <option class="each-cur" value="GYD">GYD - Guyanese Dollar</option>
+              <option class="each-cur" value="HKD">HKD - Hong Kong Dollar</option>
+              <option class="each-cur" value="HNL">HNL - Honduran Lempira</option>
+              <option class="each-cur" value="HRK">HRK - Croatian Kuna</option>
+              <option class="each-cur" value="HTG">HTG - Haitian Gourde</option>
+              <option class="each-cur" value="HUF">HUF - Hungarian Forint</option>
+              <option class="each-cur" value="IDR">IDR - Indonesian Rupiah</option>
+              <option class="each-cur" value="ILS">ILS - Israel Shekel</option>
+              <option class="each-cur" value="IMP">IMP - Isle of Man Pound</option>
+              <option class="each-cur" value="INR">INR - Indian Rupee</option>
+              <option class="each-cur" class="each-cur" value="IQD">IQD - Iraqi Dinar</option>
+              <option class="each-cur" value="IRR">IRR - Iranian Rial</option>
+              <option class="each-cur" value="ISK">ISK - Icelandic Krona</option>
+              <option class="each-cur" value="JEP">JEP - Jersey Pound</option>
+              <option class="each-cur" value="JMD">JMD - Jamaican Dollar</option>
+              <option class="each-cur" value="JOD">JOD - Jordanian Dinar</option>
+              <option class="each-cur" value="JPY">JPY - Japanese Yen</option>
+              <option class="each-cur" value="KES">KES - Kenyan Shilling</option>
+              <option class="each-cur" value="KGS">KGS - Krygyzstani Som</option>
+              <option class="each-cur" value="KHR">KHR - Cambodian Riel</option>
+              <option class="each-cur" value="KMF">KMF - Comorian Franc</option>
+              <option class="each-cur" value="KPW">KPW - North Korean Won</option>
+              <option class="each-cur" value="KRW">KRW - South Korean Won</option>
+              <option class="each-cur" value="KWD">KWD - Kuwaiti Dinar</option>
+              <option class="each-cur" value="KYD">KYD - Caymanian Dollar</option>
+              <option class="each-cur" value="KZT">KZT - Kazakhstani Tenge</option>
+              <option class="each-cur" value="LAK">LAK - Lao Kip</option>
+              <option class="each-cur" value="LBP">LBP - Lebanese Pound</option>
+              <option class="each-cur" value="LKR">LKR - Sri Lankan Rupee</option>
+              <option class="each-cur" value="LRD">LRD - Liberian Dollar</option>
+              <option class="each-cur" value="LSL">LSL - Basotho Loti</option>
+              <option class="each-cur" value="LYD">LYD - Libyan Dinar</option>
+              <option class="each-cur" value="MAD">MAD - Moroccan Dirham</option>
+              <option class="each-cur" value="MDL">MDL - Moldovan Leu</option>
+              <option class="each-cur" value="MGA">MGA - Malagasy Ariary</option>
+              <option class="each-cur" value="MKD">MKD - Macedonian Denar</option>
+              <option class="each-cur" value="MMK">MMK - Burmese Kyat</option>
+              <option class="each-cur" value="MNT">MNT - Mongolian Tughrik</option>
+              <option class="each-cur" value="MOP">MOP - Macau Pataca</option>
+              <option class="each-cur" value="MRO">MRO - Mauritanian Ouguiya</option>
+              <option class="each-cur" value="MRU">MRU - Mauritanian Ouguiya</option>
+              <option class="each-cur" value="MUR">MUR - Mauritian Rupee</option>
+              <option class="each-cur" value="MVR">MVR - Maldivian Rufiyaa</option>
+              <option class="each-cur" value="MWK">MWK - Malawian Kwacha</option>
+              <option class="each-cur" value="MXN">MXN - Mexican Peso</option>
+              <option class="each-cur" value="MYR">MYR - Malaysian Ringgit</option>
+              <option class="each-cur" value="MZN">MZN - Mozambican Metical</option>
+              <option class="each-cur" value="NAD">NAD - Namibian Dollar</option>
+              <option class="each-cur" value="NGN">NGN - Nigerian Naira</option>
+              <option class="each-cur" value="NIO">NIO - Nicaraguan Cordoba</option>
+              <option class="each-cur" value="NOK">NOK - Norwegian Krone</option>
+              <option class="each-cur" value="NPR">NPR - Nepalese Rupee</option>
+              <option class="each-cur" value="NZD">NZD - New Zealand Dollar</option>
+              <option class="each-cur" value="OMR">OMR - Oman Rial</option>
+              <option class="each-cur" value="PAB">PAB - Panamanian Balboa</option>
+              <option class="each-cur" value="PEN">PEN - Peruvian Sol</option>
+              <option class="each-cur" value="PGK">PGK - Papua New Guinean Kina</option>
+              <option class="each-cur" value="PHP">PHP - Philippine Peso</option>
+              <option class="each-cur" value="PKR">PKR - Pakistani Rupee</option>
+              <option class="each-cur" value="PLN">PLN - Polish Zloty</option>
+              <option class="each-cur" value="PYG">PYG - Paraguayan Guarani</option>
+              <option class="each-cur" value="QAR">QAR - Qatari Riyal</option>
+              <option class="each-cur" value="RON">RON - Romanian Leu</option>
+              <option class="each-cur" value="RSD">RSD - Serbian Dollar</option>
+              <option class="each-cur" value="RUB">RUB - Russian Ruble</option>
+              <option class="each-cur" value="RWF">RWF - Rwandan Franc</option>
+              <option class="each-cur" value="SAR">SAR - Saudi Arabian Riyal</option>
+              <option class="each-cur" value="SBD">SBD - Solomon Islander Dollar</option>
+              <option class="each-cur" value="SCR">SCR - Seychellois Rupee</option>
+              <option class="each-cur" value="SDG">SDG - Sudanese Pound</option>
+              <option class="each-cur" value="SEK">SEK - Swedish Krona</option>
+              <option class="each-cur" value="SGD">SGD - Singapore Dollar</option>
+              <option class="each-cur" value="SHP">SHP - Saint Helenian Pound</option>
+              <option class="each-cur" value="SLL">SLL - Sierra Leonean Leone</option>
+              <option class="each-cur" value="SOS">SOS - Somali Shilling</option>
+              <option class="each-cur" value="SRD">SRD - Surinamese Dollar</option>
+              <option class="each-cur" value="SSP">SSP - South Sudanese Pound</option>
+              <option class="each-cur" value="STD">STD - Sao Tomean Dobra</option>
+              <option class="each-cur" value="STN">STN - Sao Tomean Dobra</option>
+              <option class="each-cur" value="SVC">SVC - Salvodoran Colon</option>
+              <option class="each-cur" value="SYP">SYP - Syrian Pound</option>
+              <option class="each-cur" value="SZL">SZL - Swazi Lilangeni</option>
+              <option class="each-cur" value="THB">THB - Thai Baht</option>
+              <option class="each-cur" value="TJS">TJS - Tajikistani Solomoni</option>
+              <option class="each-cur" value="TMT">TMT - Turmenistani Manat</option>
+              <option class="each-cur" value="TND">TND - Tunisian Dollar</option>
+              <option class="each-cur" value="TOP">TOP - Tongan Pa'anga</option>
+              <option class="each-cur" value="TRY">TRY - Turkish Lira</option>
+              <option class="each-cur" value="TTD">TTD - Trinidadian Dollar</option>
+              <option class="each-cur" value="TWD">TWD - Taiwan New Dollar</option>
+              <option class="each-cur" value="TZS">TZS - Tanzanian Shilling</option>
+              <option class="each-cur" value="UAH">UAH - Ukranian Hryvnia</option>
+              <option class="each-cur" value="UGX">UGX - Ugandan Shilling</option>
+              <option class="each-cur" value="USD">USD - US Dollar</option>
+              <option class="each-cur" value="UYU">UYU - Uruguayian Peso</option>
+              <option class="each-cur" value="UZS">UZS - Uzbekistani Som</option>
+              <option class="each-cur" value="VES">VES - Venezuelan Bolivar</option>
+              <option class="each-cur" value="VND">VND - Vietnamese Dong</option>
+              <option class="each-cur" value="VUV">VUV - Ni-Vanuatu Vatu</option>
+              <option class="each-cur" value="WST">WST - Samoan Tala</option>
+              <option class="each-cur" value="XAF">XAF - Central African Franc</option>
+              <option class="each-cur" value="XAG">XAG - Silver Ounce</option>
+              <option class="each-cur" value="XAU">XAU - Gold Ounce</option>
+              <option class="each-cur" value="XCD">XCD - East Caribbean Dollar</option>
+              <option class="each-cur" value="XDR">XDR - IMR Special Drawing Rights</option>
+              <option class="each-cur" value="XOF">XOF - CFA Franc</option>
+              <option class="each-cur" value="XPD">XPD - Palladium Ounce</option>
+              <option class="each-cur" value="XPF">XPF - CFP Franc</option>
+              <option class="each-cur" value="XPT">XPT - Platinum Ounce</option>
+              <option class="each-cur" value="YER">YER - Yemeni Rial</option>
+              <option class="each-cur" value="ZAR">ZAR - South African Rand</option>
+              <option class="each-cur" value="ZMW">ZMW - Zambian Kwacha</option>
+              <option class="each-cur" value="ZWL">ZWL - Zimbabwean Dollar</option>
+            </select>
+          </div>
+        
+          <div id="results"></div>
+          </div>
+          <div class="converter">
+            <button class="btn" id="btn">Convert</button> 
+          </div>
+          <p id="last-par">Select country and click convert to see the exchange rate </p>
+          <div class="refresh">
+            <button class="btn2" id="btn2" onClick="history.go(0);">Refresh Page</button>
+          </div> 
+        </form>
+       
+      </div>
+      <script type="module" src="/main.js"></script>
+    </div>
+   
+  </body> 
+</html>
