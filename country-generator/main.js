@@ -1,4 +1,5 @@
 import axios from "axios";
+import.meta.env.API_KEY
 
 APIKEY = env("API_KEY")
 
