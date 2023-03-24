@@ -2,10 +2,9 @@ import axios from "axios";
 
 APIKEY = env("API_KEY")
 
-
 const getExchangeRate = async (toCurrency, amt) => {
     const allCurrencyData = await axios.get(`https://v6.exchangerate-api.com/v6/${APIKEY}/latest/USD`); 
-    
+    console.log(allCurrencyData)
     const rate = allCurrencyData.data.conversion_rates;
     const usd = 1 / rate["USD"]
     const exchangeRate = usd * rate[toCurrency]
