@@ -1,11 +1,13 @@
 import axios from "axios";
-import.meta.env.API_KEY
+// import.meta.env.API_KEY
 
-APIKEY = env("API_KEY")
+const API_KEY = import.meta.env.VITE_APIKEY;
 
 const getExchangeRate = async (toCurrency, amt) => {
-    const allCurrencyData = await axios.get(`https://v6.exchangerate-api.com/v6/${APIKEY}/latest/USD`); 
+    const allCurrencyData = await axios.get(`https://v6.exchangerate-api.com/v6/58c6070a273897eebcf58f36/latest/USD`)
+   
     console.log(allCurrencyData)
+
     const rate = allCurrencyData.data.conversion_rates;
     const usd = 1 / rate["USD"]
     const exchangeRate = usd * rate[toCurrency]
@@ -25,7 +27,7 @@ form.addEventListener("click", async function(event){
     event.preventDefault();
     const clickedVal = countryName.value;
     const myInput = input.value; 
-    getExchangeRate(clickedVal, myInput)
+    getExchangeRate(clickedVal, myInput);
 
 const reset = document.querySelectorAll(clickedVal, myInput);
 
@@ -37,6 +39,6 @@ reset.forEach(input => {
         input.innerHTML = ""
     }
 })
-  
-})
+
+});
   
